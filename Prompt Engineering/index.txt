@@ -1,0 +1,79 @@
+1. Guidelines:
+    1) Prompting Principles
+        a. Principle 1: Write clear and specific instructions
+        b. Principle 2: Give the model time to "think"
+    
+        A. Tactics:
+            
+            1. Tactic 1: Use delemiters to clearly indicate distint parts of the input 
+                exp: Delemiters can be anything like: ``, "", <>, <tag> </tag>
+
+            2. Tactic 2: Ask for a structured output
+                exp: Json, Html 
+
+            3. Tactic 3: Ask the model to check whether conditions are satisfied
+                exp: steps in prompt 
+
+            4. Tactic 4: "Few-shot" prompting 
+                exp: In this prompt, some examples are given to model to do the job with respective to example
+
+    2) Principle 2: Give the model time to "think" 
+
+        A. Tactics:
+
+            a) Tactic 1: Specify  the steps required to complete a task 
+            or Tactic 2: Ask for output in specified format.
+
+            b) Tactic 2: Instruct the model to work out its own solution before rushing to a conclusion 
+
+        Note: The student's solution is actually not correct 
+        We can fix this by instructing the model to work out its own solution first.  
+
+2. Iterative Prompt Development
+    => Generate marketing product description from a product fact sheet.
+
+    => Issues:
+        a. The text is too long 
+            - Limit the number of words/sentences/characters
+
+        b. Text focuses on the wrong details 
+            - Ask it to focus on the aspects that are relevant to the intended audience.
+        
+        c. Description needs a table of dimensions
+            - Ask it to extract information and organize it in a table. 
+
+
+3. Summarizing
+
+    => Text to summarize 
+    => Summarize with a word/sentence/character limit 
+    => Summarize with a focus on shipping and delivery
+    => Summarize with a focus on price and value
+    => Try "extract" instead of "summarize"
+    => Summaraize multiple product reviews
+
+4. Inferring
+
+    => Product review text 
+    => Sentiment (positive/negetive)
+    => Identify types of emotions
+    => Identify anger 
+    => Extract product and company name from customer reviews 
+    => Doing multiple tasks at once 
+    => Inferring topics 
+    => Infer 5 topics 
+    => Make a news alert for certain topics 
+
+
+5. Transforming
+
+    => Translation
+    => Universal translator 
+
+6. Expanding
+
+    => Customize the automated reply to a customer email 
+    => Remind the model to use details from the customer's email 
+
+
+7. Chatbot
